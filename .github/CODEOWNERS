@@ -1,0 +1,34 @@
+# CODEOWNERS file for monitoring-client-217
+# Global owners - will be requested for all PRs
+* @Armor-test/squad-database @Armor-test/team-notifications @Armor-test/squad-apps
+
+# Directory ownership
+/scripts/ @Armor-test/team-notifications @Armor-test/squad-cache
+/hooks/ @Armor-test/squad-ux @Armor-test/squad-tooling @Armor-test/squad-product
+/static/ @Armor-test/squad-cloud @Armor-test/squad-ux @Armor-test/squad-performance
+/deploy/ @Armor-test/dept-identity @Armor-test/dept-release
+/auth/ @Armor-test/grp-search @Armor-test/dept-api @Armor-test/dept-notifications
+/tools/ @Armor-test/squad-tooling @Armor-test/dept-test @Armor-test/squad-search
+/assets/ @Armor-test/dept-billing @Armor-test/unit-test
+/controllers/ @Armor-test/squad-tooling @Armor-test/unit-devops @Armor-test/unit-test
+/src/ @Armor-test/dept-release @Armor-test/dept-api
+/pages/ @Armor-test/squad-payments @Armor-test/dept-logging
+
+# File type ownership
+*.config @Armor-test/team-notifications @Armor-test/team-research @Armor-test/squad-ml
+*.rs @Armor-test/squad-mobile @Armor-test/grp-api
+*.graphql @Armor-test/grp-payments @Armor-test/dept-automation
+*.js @Armor-test/squad-cache @Armor-test/dept-notifications @Armor-test/squad-product
+*.cs @Armor-test/dept-logging @Armor-test/dept-ui
+*.xml @Armor-test/squad-qa @Armor-test/dept-identity
+*.cpp @Armor-test/squad-research @Armor-test/unit-governance
+*.rb @Armor-test/squad-api @Armor-test/squad-cache
+*.h @Armor-test/grp-payments @Armor-test/squad-ml @Armor-test/dept-logging
+*.tsx @Armor-test/squad-mobile @Armor-test/team-frontend
+
+# Security and special files
+Jenkinsfile @Armor-test/ci-team @Armor-test/devops
+.github/workflows/ @Armor-test/ci-team @Armor-test/devops
+/src/**/security/ @Armor-test/security @Armor-test/compliance
+/src/**/auth/ @Armor-test/security @Armor-test/auth-team
+Dockerfile @Armor-test/devops @Armor-test/infra
